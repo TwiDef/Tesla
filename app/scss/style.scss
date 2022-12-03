@@ -1,4 +1,55 @@
 @import "global";
-body {
-    color: black;
+@import "colors";
+
+/*  */
+
+.header {
+    height: 100vh;
+    &-top {
+        padding-top: 36px;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &-btn {
+        cursor: pointer;
+        background: rgba(255, 255, 255, 0.1);
+        width: 60px;
+        height: 60px;
+        border: 1px solid $white;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        div {
+            width: 36px;
+            height: 2px;
+            background-color: $white;
+        }
+    }
+    &-content {
+        &__title {
+            font-size: 96px;
+            font-family: 'Roboto', sans-serif;
+            line-height: 112px;
+            margin-bottom: 40px;
+        }
+        &__text {
+            width: 284px;
+            margin-bottom: 25px;
+        }
+        &__btn {
+            display: inline-block;
+            padding: 30px 62px;
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid $white;
+            transition: all .3s;
+            &:hover {
+                background-color: $red;
+            }
+        }
+    }
 }
+
+
+/*  */
