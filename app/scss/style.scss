@@ -90,5 +90,43 @@
     }
 } */
 
+.statistics {
+    margin: 105px 0 100px;
+    &-items {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+    &-item {
+        &__title {
+            margin-bottom: 20px;
+        }
+        &__num {
+            font-size: 96px;
+            line-height: 112px;
+            margin-bottom: 8px;
+            span {
+                font-family: 'Roboto', sans-serif;
+                font-size: 24px;
+                line-height: 28px;
+            }
+            &--speed {
+                position: relative;
+                display: inline-block;
+                &::before {
+                    content: "+";
+                    position: absolute;
+                    right: 34px;
+                    font-size: 24px;
+                    line-height: 28px;
+                }
+            }
+        }
+        &__descr {
+            color: $dark-red;
+        }
+    }
+}
 
-/*  */
+
+/*   */
