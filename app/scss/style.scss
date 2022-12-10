@@ -123,7 +123,7 @@
             }
         }
         &__descr {
-            color: $dark-red;
+            color: $red;
         }
     }
 }
@@ -132,5 +132,34 @@
     margin-bottom: 100px;
 }
 
+.advantages {
+    &-inner__row {
+        margin-bottom: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    &__title {
+        position: absolute;
+        top: 0;
+        font-size: 36px;
+        line-height: 42px;
+        color: $red;
+        &--bottom {
+            right: 0;
+            bottom: 0;
+            top: auto;
+        }
+    }
+    &__text {
+        width: 303px;
+    }
+    &-descr {
+        max-width: 570px;
+        width: 100%;
+    }
+}
 
-/* 54:50 */
+
+/* */
