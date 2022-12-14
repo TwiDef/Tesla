@@ -43,16 +43,17 @@
             width: 284px;
             margin-bottom: 25px;
         }
-        &__btn {
-            display: inline-block;
-            padding: 30px 62px;
-            background: rgba(255, 255, 255, 0.15);
-            border: 1px solid $white;
-            transition: all 0.3s;
-            &:hover {
-                background-color: $dark-red;
-            }
-        }
+    }
+}
+
+.button {
+    display: inline-block;
+    padding: 30px 62px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid $white;
+    transition: all 0.3s;
+    &:hover {
+        background-color: $red;
     }
 }
 
@@ -181,6 +182,36 @@
             &-text {
                 max-width: 430px;
                 padding-top: 25px;
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: $dark-red;
+    padding: 83px 0 20px;
+    &-btn {
+        text-align: center;
+        margin-bottom: 83px;
+    }
+    &-copy {
+        text-align: center;
+        font-weight: 700;
+        li {
+            display: inline-block;
+            position: relative;
+            &+li::before {
+                content: "|";
+                position: absolute;
+                left: -6px;
+            }
+            box-shadow: inset 0 0 0 0 $white;
+            padding: 0 14px;
+            transition: color 0.3s ease-in-out,
+            box-shadow 0.3s ease-in-out;
+            &:hover {
+                box-shadow: inset 200px 0 0 0 $red;
+                color: white;
             }
         }
     }
