@@ -134,6 +134,30 @@
 }
 
 .advantages {
+    &__img {
+        /* transform: scale(1, 1);
+        transition: all .3s;
+        &:hover {
+            transform: scale(-1, 1);
+        } */
+        perspective: 470px;
+        padding: 2rem;
+        /* img {
+            transform: rotateY(12deg);
+        } */
+        img:hover {
+            transition: all .3s;
+            transform: rotateY(-20deg);
+        }
+    }
+    &__img--second {
+        perspective: 470px;
+        padding: 2rem;
+        img:hover {
+            transition: all .3s;
+            transform: rotateY(20deg);
+        }
+    }
     &-inner__row {
         margin-bottom: 100px;
         display: flex;
@@ -193,6 +217,9 @@
     &-btn {
         text-align: center;
         margin-bottom: 83px;
+        .button:hover {
+            background-color: $black;
+        }
     }
     &-copy {
         text-align: center;
@@ -210,7 +237,7 @@
             transition: color 0.3s ease-in-out,
             box-shadow 0.3s ease-in-out;
             &:hover {
-                box-shadow: inset 200px 0 0 0 $red;
+                box-shadow: inset 200px 0 0 0 $black;
                 color: white;
             }
         }
