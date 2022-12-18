@@ -57,6 +57,43 @@
     }
 }
 
+.menu {
+    background-color: $black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    &__list {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        a {
+            transition: all .5s;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 56px;
+            padding: 30px 25px 14px 0;
+            border-bottom: 3px solid $red;
+            display: inline-block;
+            min-width: 368px;
+            &:hover {
+                border-color: $white;
+                color: $red;
+                transform: scale(1.2);
+                margin-left: 36px;
+            }
+        }
+    }
+}
+
+.close-btn {
+    width: 50px;
+    height: 50px;
+    background-color: $white;
+    position: absolute;
+    right: 0;
+}
+
 .slider__item {
     height: 100vh;
     background-repeat: no-repeat;
@@ -237,7 +274,7 @@
             transition: color 0.3s ease-in-out,
             box-shadow 0.3s ease-in-out;
             &:hover {
-                box-shadow: inset 200px 0 0 0 $black;
+                box-shadow: inset 200px 0 0 0 $red;
                 color: white;
             }
         }
