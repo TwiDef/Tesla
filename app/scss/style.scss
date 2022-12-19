@@ -187,33 +187,15 @@
     }
 }
 
-.images {
+.video {
     margin-bottom: 100px;
 }
 
 .advantages {
     &__img {
-        /* transform: scale(1, 1);
-        transition: all .3s;
+        transition: .4s all;
         &:hover {
-            transform: scale(-1, 1);
-        } */
-        perspective: 470px;
-        padding: 2rem;
-        /* img {
-            transform: rotateY(12deg);
-        } */
-        img:hover {
-            transition: all .3s;
-            transform: rotateY(-20deg);
-        }
-    }
-    &__img--second {
-        perspective: 470px;
-        padding: 2rem;
-        img:hover {
-            transition: all .3s;
-            transform: rotateY(20deg);
+            transform: scale(1.075);
         }
     }
     &-inner__row {
@@ -302,5 +284,6 @@
     }
 }
 
+@import "media";
 
 /* */

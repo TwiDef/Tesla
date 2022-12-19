@@ -1,0 +1,26 @@
+@media (max-width: 410px) {
+    .header {
+        &-top__logo img {
+            width: 200px;
+        }
+        &-content {
+            &__title {
+                font-size: 70px;
+                margin-top: 20px;
+                line-height: 85px;
+            }
+        }
+        .menu {
+            &__list a {
+                font-size: 30px;
+                line-height: 44px;
+                padding: 19px 10px 7px 0;
+                display: block;
+                min-width: 100%;
+            }
+            &__list ul {
+                width: 100%;
+            }
+        }
+    }
+}
