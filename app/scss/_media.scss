@@ -1,3 +1,14 @@
+@media (max-width: 820px) {
+    .statistics {
+        &-items {
+            flex-wrap: wrap;
+        }
+        &-item {
+            padding: 50px;
+        }
+    }
+}
+
 @media (max-width: 410px) {
     .header {
         &-top__logo img {
@@ -21,6 +32,15 @@
             &__list ul {
                 width: 100%;
             }
+        }
+        .statistics {
+            margin: 110px 0 50px;
+            &-item {
+                padding: 25px 0;
+            }
+        }
+        .button {
+            padding: 20px 45px;
         }
     }
 }
